@@ -22,3 +22,11 @@
 .btn-icon:hover {
   background-color: aliceblue;
 }
+
+.my-scroll-container::-webkit-scrollbar {
+  height: 0px;
+}
+
+button {
+  cursor: pointer;
+}
