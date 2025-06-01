@@ -23,14 +23,18 @@ function Navbar() {
   }
 
   return (
-    <div className="center flex-col border-b-1 border-zinc-300 px-5 pb-5 ">
+    <div className="center flex-col border-b-1 border-zinc-300 px-5 pb-5 md:pb-0 ">
       <div className="hidden md:flex w-full justify-between mt-2 border-b-1 border-zinc-300 text-[11px] text-zinc-500">
         {/* left top */}
-        <div className="center gap-1">
-          <MapPin size={11} /> Deliver to : Location 829111
-          <button className="cursor-pointer">
-            <ChevronDown size={12} />
-          </button>
+        <div className="center gap-3">
+          <span className="center">
+            <MapPin size={11} /> Deliver to : Location 829111
+            <button className="cursor-pointer">
+              <ChevronDown size={12} />
+            </button>
+          </span>
+
+          <span>Customer Service: +1 (555) 123-4567</span>
         </div>
 
         {/* right top */}
@@ -70,15 +74,15 @@ function Navbar() {
               <button className="w-58 h-full bg-gray-300/30 center gap-1">
                 All Categories <ChevronDown size={18} />
               </button>
-              <Search size={25} />
+              <Search className="text-zinc-500" size={25} />
               <input
                 className="outline-none w-full"
                 type="text"
-                placeholder="Search products..."
+                placeholder="Search products, brands and categories..."
               />
               <input
                 type="submit"
-                className="bg-purple-300 h-full w-30"
+                className="bg-purple-300 h-full w-30 font-semibold"
                 value={"Search"}
               />
             </form>
